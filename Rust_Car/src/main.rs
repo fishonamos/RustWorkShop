@@ -20,7 +20,10 @@ fn main() {
    // Order three cars
    let mut car = car_factory(String::from("Red"), Transmission::Manual, false);
    println!("Car 1 = {}, {:?} transmission, convertible: {}, mileage: {}", car.color, car.transmission, car.convertible, car.mileage);
-
+   let mut car = car_factory(String::from("Yellow"), Transmission::SemiAuto, false);
+   println!("Car 2 = {}, {:?} transmission, convertible: {}, mileage: {}", car.color, car.transmission, car.convertible, car.mileage);
+   let mut car = car_factory(String::from("Black"), Transmission::Automatic, true);
+   println!("Car 3 = {}, {:?} transmission, convertible: {}, mileage: {}", car.color, car.transmission, car.convertible, car.mileage);
 }
 
 fn car_factory(color: String, transmission: Transmission, convertible: bool) -> Car {
